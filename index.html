@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Territorial.io - AI Autoplay</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="ui-panel">
+      <div id="stats">
+        <div>Territory: <span id="territory-count">1</span></div>
+        <div>Army: <span id="army-count">1</span></div>
+        <div>Income: <span id="income-rate">1</span>/s</div>
+      </div>
+      <div id="controls">
+        <button id="ai-toggle">Enable AI Autoplay</button>
+        <button id="speed-toggle">Speed: 1x</button>
+        <button id="reset-game">Reset Game</button>
+      </div>
+      <div id="ai-status">
+        <div>AI Status: <span id="ai-state">Disabled</span></div>
+        <div>Strategy: <span id="ai-strategy">-</span></div>
+      </div>
+    </div>
+    <canvas id="game-canvas"></canvas>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
